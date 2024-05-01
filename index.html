@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>norming A/P Invoice Requisition</title>
+</head>
+<body>
+    <nav>
+        <div class="log">
+            <h1>norming</h1>
+        </div>
+        <div class="nav-tabs">
+            <div class="unselected">
+                <a href="#">A/P Invoice Requisition</a>
+            </div>
+            <div class="selected">
+                <a href="#">A/P Invoice Requisition</a>
+            </div>
+        </div>
+    </nav>
+    <form>
+        <div class="section1">
+            <div class="left">
+                <div class="left-row1">
+                    <label for="requisiton-type">Requisition Type</label>
+                    <input type="text" id="requisition-type">
+                    <label for="status">status</label>
+                </div>
+                <div class="left-row2">
+                    <label for="vendor-number">Vendor Number</label>
+                    <input type="text" id="vendor-number">
+                    <input type="text" id="document-total">
+                    <label for="document-total">Document Total</label>
+                </div>
+            </div>
+            <div class="right">
+                <div class="right-row1">
+                    <input type="text" id="status">
+                </div>
+                <div class="right-row2">
+                    <input type="number" id="cad">
+                    <input type="text" placeholder="CAD" id="CAD">
+                    <input type="checkbox">
+                    <label for="retainage">retainage</label>
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="section2">
+            <div class="row3">
+                <label for="document-type">Document Type</label>
+                <input type="text" id="document-type">
+                <label for="document-date">Document Date</label>
+                <input type="date" id="document-date">
+                <label for="posting-date">Posting Date</label>
+                <input type="date" id="posting-date">
+                <input type="checkbox">
+                <label for="urgent">Urgent</label>
+            </div>
+            <div class="row4">
+                <label for="invoice-number">Invoice Number</label>
+                <input type="number" id="invoice-number">
+                <label for="po-number">PO Number</label>
+                <input type="number" id="po-number">
+                <label for="order-number">Order Number</label>
+                <input type="number" id="order-number">
+                <input type="checkbox">
+                <label for="on-hold">On Hold</label>
+            </div>
+            <div class="row5">
+                <label for="Description">Description</label>
+                <input type="text">
+            </div>
+            <div class="row6">
+                <label for="approve">Approve</label>
+                <input type="text" id="approve">
+                <label for="backorder">Backorder</label>
+                <input type="number" id="backorder">
+            </div>
+            <div class="row7">
+                <label for="courier">Courier</label>
+                <input type="text" id="courier">
+                <label for="date-received">Date Rcvd</label>
+                <input type="date" id="date-rcvd">
+            </div>
+            <div class="row8">
+                <label for="ups-zone">UPS Zone</label>
+                <input type="text" id="ups-zone">
+                <label for="requisition-link">Requisition Link</label>
+                <input type="text" id="requisition-link">
+            </div>
+        </div>
+    </form>
+
+    <div class="tab-button">
+        <button class="selected-tab">Invoice Details</button>
+        <button class="unselected">Terms</button>
+        <button class="unselected">Totals</button>
+        <button class="unselected">Attachments</button>
+    </div>
+
+    <table>
+        <tr>
+          <th><input type="checkbox"></th>
+          <th>Distribution Code</th>
+          <th>Description</th>
+          <th>G/L Account</th>
+          <th>Dangerous item</th>
+          <th>Extended Warrant</th>
+          <th>Quantity</th>
+          <th>UOM</th>
+          <th>Warrant Period</th>
+          <th>comments</th>
+        </tr>
+        <tr>
+            <td><input type="checkbox">1</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><input type="checkbox">2</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><input type="checkbox">3</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><input type="checkbox">4</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+      </table>
+
+      <div class="table-btn">
+        <button>Insert</button>
+        <button>Remove</button>
+        <button>Copy</button>
+        <button>Calculate Tax</button>
+        <button>Import</button>
+      </div>
+</body>
+</html>
